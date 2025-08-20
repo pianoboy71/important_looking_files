@@ -6,6 +6,10 @@
 #define DEFAULT_PORT 8081
 #define LOG_PATH "/var/log/sysmon.log"
 
-typedef struct {}
+typedef struct {
+  int pid;
+  char name[64];
+  long mem_usage;
+} proc_info_t;
 
 #endif // !SYSTEM_DEFS_H
